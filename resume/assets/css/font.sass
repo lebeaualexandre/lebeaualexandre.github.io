@@ -1,0 +1,63 @@
+@import "~/assets/css_var/Colors"
+$colors: darkTheme(true)
+
+@font-face
+  font-family: 'Major Mono Display'
+  src: url('/assets/fonts/MajorMonoDisplay-Regular.ttf') format('ttf')
+
+
+@font-face
+  font-family: 'Nunito'
+  src: url('/assets/fonts/Nunito') format('ttf')
+
+
+html
+  font-size: 12px
+  font-family: 'Nunito', sans-serif
+  color: map-get($colors, 'primary')
+
+
+*
+*::after
+*::before
+  font-size: inherit
+  font-family: inherit
+  color: inherit
+
+h1
+  font-size: 6em
+  font-family: "Major Mono Display", "Nunito"
+  font-weight: 200
+  padding-bottom: 2rem
+  text-transform: lowercase
+
+p, a, i 
+  font-family: "Nunito"
+  padding: 12px 0
+  text-align: justify
+  font-size: 1.5rem
+  line-height: 1.75rem
+  text-decoration: none
+  letter-spacing: 0.1rem
+
+h2 
+  font-weight: 400
+  font-size: 4em
+  text-decoration: underline
+
+h3 
+  font-family: "Major Mono Display", "Nunito"
+  font-weight: 400
+  font-size: 2em
+  text-transform: lowercase
+  font-weight: bolder
+  text-align: left
+  padding: 12px
+
+h4 
+  font-family: "Nunito"
+  font-weight: 400
+  font-size: 1.5em
+  text-align: left
+  padding: 12px 0
+

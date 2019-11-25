@@ -1,0 +1,7 @@
+@function darkTheme($dark)
+  $colors: ("bg": #242424,"primary": #fefefe, "secondary": #f0f0f0, "tertiary": #d4d4d4)
+  @if($dark)
+    @return $colors
+  @else
+    $colors: ("bg": #fefefe,"primary": #242424, "secondary": #444444, "tertiary": #696969)
+    @return $colors

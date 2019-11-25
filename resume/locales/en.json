@@ -1,0 +1,29 @@
+{
+  "welcome": "Welcome!",
+  "links": {
+    "languages": {
+      "fa": "fas fa-globe-americas",
+      "hint": "Change idiom",
+      "list": {
+        "english": "EN",
+        "french": "FR"
+      }
+    },
+    "theme": {
+      "light": {
+        "fa": "fas fa-moon",
+        "name": "Dark theme",
+        "content": "Dark"
+      },
+      "dark": {
+        "fa": "fas fa-sun",
+        "name": "Light theme",
+        "content": "Light"
+      }
+    }
+  },
+  "btn": {
+    "more": "see more....",
+    "less": "see less...."
+  }
+}

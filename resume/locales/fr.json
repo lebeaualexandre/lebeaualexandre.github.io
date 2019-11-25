@@ -1,0 +1,28 @@
+{
+  "links": {
+    "languages": {
+      "fa": "fas fa-globe-americas",
+      "hint": "Changer de langue",
+      "list": {
+        "english": "EN",
+        "french": "FR"
+      }
+    },
+    "theme": {
+      "light": {
+        "fa": "fas fa-moon",
+        "name": "Thème sombre",
+        "content": "Foncé"
+      },
+      "dark": {
+        "fa": "fas fa-sun",
+        "name": "Thème clair",
+        "content": "Clair"
+      }
+    }
+  },
+  "btn": {
+    "more": "voir plus....",
+    "less": "voir moins...."
+  }
+}
