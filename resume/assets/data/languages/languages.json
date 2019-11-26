@@ -1,0 +1,32 @@
+{
+  "java": {
+    "name": "Java",
+    "tags": ["school"]
+  },
+  "cs": {
+    "name": "CSharp",
+    "tags": ["school"],
+    "frameworks": [".net"]
+  },
+  "js": {
+    "name": "JavaScript",
+    "tags": ["home", "school", "work"],
+    "frameworks": ["React.js", "Vue.js", ".net"]
+  },
+  "sql": {
+    "name": "SQL",
+    "tags": ["school"]
+  },
+  "mdb": {
+    "name": "MongoDB",
+    "tags": ["work"]
+  },
+  "yml": {
+    "name": "YAML",
+    "tags": ["home"]
+  },
+  "xml": {
+    "name": "MongoDB",
+    "tags": ["school"]
+  }
+}

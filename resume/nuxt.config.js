@@ -38,9 +38,9 @@ export default {
    */
   css: [
     "~/assets/css/reset.css",
-    "~/assets/css_var/Colors.sass", 
+    "~/assets/css_var/Colors.sass",
     "~/assets/css/font.sass",
-    "~/assets/css/inputs.sass",
+    "~/assets/css/inputs.sass"
   ],
 
   /*

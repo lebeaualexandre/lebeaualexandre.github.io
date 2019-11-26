@@ -1,6 +1,6 @@
 <template>
   <div id="btn-container">
-    <button @click="moreLess">{{$t(`${seeMore? 'less' : 'more'}`)}}</button>
+    <button @click="moreLess">{{ $t(`${seeMore ? "less" : "more"}`) }}</button>
   </div>
 </template>
 
@@ -12,9 +12,6 @@ export default {
       type: Boolean,
       default: false
     }
-  },
-  i18n: {
-    messages:  require("./i18n.yml")
   }
 };
 </script>
@@ -33,5 +30,4 @@ div#btn-container
   color: map-get($colors, "primary")
   box-shadow: 0px -6px 12px 4px map-get($colors, "bg")
   margin-top: 12px
-
 </style>

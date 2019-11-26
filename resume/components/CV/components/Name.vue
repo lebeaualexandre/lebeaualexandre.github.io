@@ -19,7 +19,7 @@ h1
   color: map-get($colors, "primary")
   position: sticky
   text-align: center
-  top:
+  top: 0
   background-color: map-get($colors, "bg")
   box-shadow: 0px 12px 12px 0px map-get($colors, "bg")
   padding: 2rem 0

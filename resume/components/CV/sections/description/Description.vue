@@ -1,19 +1,16 @@
 <template>
   <div>
-    <p v-for="value in $t('presentation.simple')" v-bind:key="value">{{value}}</p>
+    <p v-for="value in $t('simple')" v-bind:key="value">
+      {{ value }}
+    </p>
   </div>
 </template>
 
 <script>
-export default {
-  i18n: {
-    messages: {
-      en: require("./description.en.json"),
-      fr: require("./description.fr.json")
-    }
-  }
-};
+export default {};
 </script>
+
+<i18n scr="~/assets/data/description/i18n.yml"></i18n>
 
 <style lang="sass">
 @import "~/assets/css_var/Colors"

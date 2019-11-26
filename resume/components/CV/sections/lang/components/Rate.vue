@@ -1,7 +1,7 @@
 <template>
-  <ol
-    v-bind:value="value"
-  ><li :class="{ 'isLvl' : rtg <= lvl}" :key="rtg"  v-for="rtg in maxRate"/></ol>
+  <ol>
+    <li :class="{ isLvl: rtg <= lvl }" :key="rtg" v-for="rtg in maxRate" />
+  </ol>
 </template>
 
 <script>
@@ -29,14 +29,12 @@ ol
   display: flex
   align-items: center
   justify-content: space-around
-  li 
+  li
     min-height: 1rem
     min-width: 1rem
     border-radius: 50%
     margin: 0.2rem
     border: 1px solid map-get($colors, "tertiary")
-    &.isLvl 
+    &.isLvl
       background-color: map-get($colors, "tertiary")
-    
-  
 </style>

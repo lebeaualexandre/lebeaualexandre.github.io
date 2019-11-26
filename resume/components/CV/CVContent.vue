@@ -1,6 +1,6 @@
 <template>
-  <section :class="{'fullHeight': seeMore}">
-    <name :class="{'small': seeMore}" />
+  <section :class="{ fullHeight: seeMore }">
+    <name :class="{ small: seeMore }" />
     <div class="flex">
       <description v-if="seeMore" />
       <lang v-if="seeMore" class="small" />
@@ -10,9 +10,7 @@
 </template>
 
 <script>
-// import { CVSection } from "~/assets/styled-components/Section";
-import Description from "./sections/description/Description";
-// import Text from "~/assets/styled-components/inputs/Text";
+import Description from "./sections/description/description";
 import Lang from "./sections/lang/Lang";
 import Name from "./components/Name";
 import SeeMore from "./components/SeeMore/SeeMore";
@@ -20,11 +18,9 @@ import SeeMore from "./components/SeeMore/SeeMore";
 export default {
   components: {
     Name,
-      Description,
-      Lang,
+    Description,
+    Lang,
     "see-more": SeeMore
-    //   "text-input": Text,
-    //   "cv-section": CVSection
   },
 
   data() {
@@ -59,16 +55,12 @@ section
     & > div
       padding: 2rem 3rem;
 
+  height: 60vh;
+  transition: height 0.6s ease-in-out;
+  &.fullHeight
+    height: 100vh
+    justify-content: center
 
-    
-    height: 60vh;
-    transition: height 0.6s ease-in-out;
-    .fullHeight
-      height: 100vh
-      justify-content: center
-
-    display: flex;
-    flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
 </style>

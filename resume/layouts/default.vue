@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    isDark: false;
+    return { isDark: false };
   }
 };
 </script>

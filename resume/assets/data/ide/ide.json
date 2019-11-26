@@ -1,0 +1,22 @@
+{
+  "vsc": {
+    "name": "Visual Studio Code",
+    "tags": ["home", "school", "work", "heart"],
+    "for": ["C#", "Java", "Javascript", "HTML", "CSS", "JSON", "YAML"]
+  },
+  "as": {
+    "name": "Android Studio",
+    "tags": ["school"],
+    "for": ["Java", "Kotlin"]
+  },
+  "vs": {
+    "name": "Visual Studio",
+    "tags": ["school"],
+    "for": ["C#", "XAML", ".net"]
+  },
+  "ec": {
+    "name": "Eclipse",
+    "tags": ["school"],
+    "for": ["Java"]
+  }
+}
