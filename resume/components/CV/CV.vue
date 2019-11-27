@@ -3,6 +3,7 @@
     <name :class="{ small: seeMore }" />
     <div class="flex">
       <description v-if="seeMore" />
+      <lists />
       <lang v-if="seeMore" class="small" />
       <see-more :moreLess="moreLess" :seeMore="seeMore" />
     </div>
@@ -10,17 +11,19 @@
 </template>
 
 <script>
-import Description from "./sections/description/description";
-import Lang from "./sections/lang/Lang";
-import Name from "./components/Name";
-import SeeMore from "./components/SeeMore/SeeMore";
+import Description from "./articles/description/description";
+import Lang from "./articles/lang/lang";
+import list_articles from "./articles/list/list_article";
+import Name from "./components/name";
+import SeeMore from "./components/see_more";
 
 export default {
   components: {
     Name,
     Description,
     Lang,
-    "see-more": SeeMore
+    "see-more": SeeMore,
+    lists: list_articles
   },
 
   data() {
@@ -37,7 +40,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import "~/assets/css_var/device"
+
 
 
 section

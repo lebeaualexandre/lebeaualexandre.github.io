@@ -1,5 +1,5 @@
 <template>
-  <h1 class="dark">Lebeau</h1>
+  <h1>Lebeau</h1>
 </template>
 
 <script>
@@ -11,10 +11,6 @@ export default {
 </script>
 
 <style lang="sass">
-@import "~/assets/css_var/Colors"
-
-
-
 h1
   color: $primary
   position: sticky

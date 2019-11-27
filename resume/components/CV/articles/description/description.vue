@@ -11,9 +11,8 @@ export default {};
 <i18n scr="~/assets/data/description/i18n.yml"></i18n>
 <i18n src="~/assets/data/idioms/i18n.yml"></i18n>
 
-
 <style lang="sass">
-@import "~/assets/css_var/Colors"
+
 
 
 p

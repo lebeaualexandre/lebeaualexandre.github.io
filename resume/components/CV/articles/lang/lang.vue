@@ -27,7 +27,7 @@ export default {
 <i18n src="~/assets/data/idioms/i18n.yml"></i18n>
 
 <style lang="sass" scoped>
-@import "~/assets/css_var/Device"
+
 
 ol
   flex-direction: row

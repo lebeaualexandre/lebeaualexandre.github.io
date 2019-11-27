@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import "~/assets/css_var/Colors"
+
 
 
 body

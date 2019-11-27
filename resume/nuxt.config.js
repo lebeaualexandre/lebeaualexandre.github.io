@@ -42,6 +42,10 @@ export default {
     "~/assets/css/font.sass",
     "~/assets/css/inputs.sass"
   ],
+  modules: ["@nuxtjs/style-resources"],
+  styleResources: {
+    sass: ["~/assets/css_var/*.sass"]
+  },
   /*
    ** Nuxt.js route controller
    */

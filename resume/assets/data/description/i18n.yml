@@ -1,9 +1,11 @@
 en:
   header: 'Description'
-  simple: >
-    I'm a programmer
+  simple: 
+    - I'm a programmer
+    - I'm a programmer
 
 fr:
   header: 'Description'
-  simple: >
-    Je suis un programmeur
+  simple:
+    - Je suis un programmeur
+    - Je suis un programmeur

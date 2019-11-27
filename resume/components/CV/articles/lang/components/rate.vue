@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import "~/assets/css_var/Colors"
+
 
 
 ol

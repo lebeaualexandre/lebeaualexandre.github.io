@@ -16,12 +16,9 @@ export default {
 };
 </script>
 
-<i18n src="./i18n.yml"></i18n>
+<i18n src="~/assets/data/controls/i18n.yml"></i18n>
 
 <style lang="sass" scoped>
-@import "~/assets/css_var/Colors"
-
-
 div#btn-container
   padding: 12px
   position: sticky
