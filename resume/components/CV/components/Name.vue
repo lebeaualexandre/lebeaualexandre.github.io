@@ -12,16 +12,16 @@ export default {
 
 <style lang="sass">
 @import "~/assets/css_var/Colors"
-$colors: darkTheme(true)
+
 
 
 h1
-  color: map-get($colors, "primary")
+  color: $primary
   position: sticky
   text-align: center
   top: 0
-  background-color: map-get($colors, "bg")
-  box-shadow: 0px 12px 12px 0px map-get($colors, "bg")
+  background-color: $bg
+  box-shadow: 0px 12px 12px 0px $bg
   padding: 2rem 0
   letter-spacing: 5px
   cursor: default
@@ -35,7 +35,7 @@ h1
     width: 100%
     left: 0
     bottom: 2.8rem
-    background-color: map-get($colors, "bg")
+    background-color: $bg
   &:hover
     &::after
       height: 0.95rem

@@ -23,7 +23,7 @@ export default {
 
 <style lang="sass" scoped>
 @import "~/assets/css_var/Colors"
-$colors: darkTheme(true)
+
 
 ol
   display: flex
@@ -34,7 +34,7 @@ ol
     min-width: 1rem
     border-radius: 50%
     margin: 0.2rem
-    border: 1px solid map-get($colors, "tertiary")
+    border: 1px solid $tertiary
     &.isLvl
-      background-color: map-get($colors, "tertiary")
+      background-color: $tertiary
 </style>

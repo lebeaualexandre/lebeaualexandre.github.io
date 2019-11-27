@@ -14,11 +14,11 @@ export default {
 
 <style lang="sass">
 @import "~/assets/css_var/Colors"
-$colors: darkTheme(true)
+
 
 body
   min-height: 100vh
-  background-color: map-get($colors, 'bg')
+  background-color: $bg
 html
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",    Roboto, "Helvetica Neue", Arial, sans-serif
   font-size: 16px

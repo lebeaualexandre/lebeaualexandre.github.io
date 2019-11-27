@@ -37,10 +37,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
-@import "~/assets/css_var/Colors"
 @import "~/assets/css_var/device"
-$colors: darkTheme(true)
+
 
 section
   width: 100%;

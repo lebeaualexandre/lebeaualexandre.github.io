@@ -1,19 +1,19 @@
 en:
-  header: "Idioms"
+  header: 'Idioms'
   list:
-    - name: "English"
-      sku: "en"
-    - name: "French"
-      sku: "fr"
-    - name: "Spanish"
-      sku: "es"
+    - name: 'English'
+      sku: 'en'
+    - name: 'French'
+      sku: 'fr'
+    - name: 'Spanish'
+      sku: 'es'
 
 fr:
-  header: "Langues"
+  header: 'Langues'
   list:
-    - name: "Anglais"
-      sku: "en"
-    - name: "Français"
-      sku: "fr"
-    - name: "Espagnol"
-      sku: "es"
+    - name: 'Anglais'
+      sku: 'en'
+    - name: 'Français'
+      sku: 'fr'
+    - name: 'Espagnol'
+      sku: 'es'

@@ -20,14 +20,14 @@ export default {
 
 <style lang="sass" scoped>
 @import "~/assets/css_var/Colors"
-$colors: darkTheme(true)
+
 
 div#btn-container
   padding: 12px
   position: sticky
   bottom: -1px
-  background-color: map-get($colors, "bg")
-  color: map-get($colors, "primary")
-  box-shadow: 0px -6px 12px 4px map-get($colors, "bg")
+  background-color: $bg
+  color: $primary
+  box-shadow: 0px -6px 12px 4px $bg
   margin-top: 12px
 </style>
