@@ -12,8 +12,8 @@ export default ({ app, store }) => {
     locale: store.state.locale,
     fallbackLocale: "fr",
     locales: [
-      { code: "fr", name: "Français" },
-      { code: "en", name: "English" }
+      { code: "fr", name: "Français", path: "/en/" },
+      { code: "en", name: "English", path: "/" }
     ],
     messages: {
       en: require("~/locales/en.json"),
@@ -23,9 +23,9 @@ export default ({ app, store }) => {
 
   app.i18n.path = link => {
     if (app.i18n.locale === app.i18n.fallbackLocale) {
-      return `/${link}`;
+      return `/${ link }`;
     }
 
-    return `/${app.i18n.locale}/${link}`;
+    return `/${ app.i18n.locale }/${ link }`;
   };
 };

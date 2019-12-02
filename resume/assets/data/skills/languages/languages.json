@@ -6,12 +6,12 @@
   "cs": {
     "name": "CSharp",
     "tags": ["school"],
-    "frameworks": [".net"]
+    "sub_list": [".net"]
   },
   "js": {
     "name": "JavaScript",
     "tags": ["home", "school", "work"],
-    "frameworks": ["React.js", "Vue.js", ".net"]
+    "sub_list": ["React.js", "Vue.js", ".net"]
   },
   "sql": {
     "name": "SQL",

@@ -1,0 +1,14 @@
+{
+  "en": {
+    "name": "English",
+    "fa": "fas fa-globe-americas",
+    "path": "/en",
+    "code": "en"
+  },
+  "fr": {
+    "name": "Français",
+    "fa": "fas fa-globe-americas",
+    "path": "",
+    "code": "fr"
+  }
+}

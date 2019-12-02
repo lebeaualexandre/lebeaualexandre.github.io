@@ -13,11 +13,9 @@ export default {
 <style lang="sass">
 h1
   color: $primary
-  position: sticky
-  text-align: center
+  position: relative
   top: 0
-  background-color: $bg
-  box-shadow: 0px 12px 12px 0px $bg
+  text-align: center
   padding: 2rem 0
   letter-spacing: 5px
   cursor: default

@@ -1,11 +1,15 @@
 en:
-  header: 'Description'
-  simple: 
-    - I'm a programmer
-    - I'm a programmer
+  header: "lebeau"
+  description:
+    - >
+      I am an <em>hard</em> working perfectionist developer, passionate about all that is logical and looking for all of the knowledge needed that would allow me to create products of a quality without regard.
+    - >
+      I am <em>godlike</em>
 
 fr:
-  header: 'Description'
-  simple:
-    - Je suis un programmeur
-    - Je suis un programmeur
+  header: "lebeau"
+  description:
+    - >
+      Je suis un développeur perfectionniste travaillant, passionné de tout ce qui est logique et à la recherche de toutes connaissances me permettant de créer des produits d’une qualité sans égards.
+    - >
+      Dieu même m'a voulu avec l'<em>immense</em> pénis qui pend entre mes couilles.

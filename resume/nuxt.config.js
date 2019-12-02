@@ -3,8 +3,8 @@
 const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
-        base: "/"
-      }
+      base: "/"
+    }
     : {};
 
 export default {
@@ -23,7 +23,13 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+      }
+    ]
   },
   server: {
     port: 8080, // default: 3000
@@ -38,13 +44,13 @@ export default {
    */
   css: [
     "~/assets/css/reset.css",
-    "~/assets/css_var/Colors.sass",
+    "~/assets/css/css_var/Colors.sass",
     "~/assets/css/font.sass",
     "~/assets/css/inputs.sass"
   ],
-  modules: ["@nuxtjs/style-resources"],
+  modules: [ "@nuxtjs/style-resources" ],
   styleResources: {
-    sass: ["~/assets/css_var/*.sass"]
+    sass: [ "~/assets/css/css_var/*.sass" ]
   },
   /*
    ** Nuxt.js route controller
@@ -56,7 +62,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~plugins/i18n.js"],
+  plugins: [ "~plugins/i18n.js" ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -88,11 +94,12 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config) {
+    extend(config, { isDev }) {
       config.module.rules.push({
+        test: /\.ya?ml$/,
         resourceQuery: /blockType=i18n/,
         type: "javascript/auto",
-        loader: ["@kazupon/vue-i18n-loader", "yaml-loader"]
+        loader: [ "@kazupon/vue-i18n-loader", "yaml-loader" ]
       });
     }
   }
