@@ -1,25 +1,21 @@
 en:
-  header: "Integrated development environment (EDI/IDE) of choice"
-  description: ""
+  header: 'IDE of choice'
+  description: ''
   list:
-    - sku: "vsc"
-      description: ""
-    - sku: "as"
-      description: ""
-    - sku: "vs"
-      description: ""
-    - sku: "ec"
-      description: ""
+    vsc: { sku: 'vsc', description: '' }
+    as: { sku: 'as', description: '' }
+    vs: { sku: 'vs', description: '' }
+    ec: { sku: 'ec', description: '' }
 
 fr:
-  header: "Environnement de développement intégré (EDI/IDE) de choix"
-  description: ""
+  header: 'IDE/éditeur de choix'
+  description: ' '
   list:
-    - sku: "vsc"
-      description: ""
-    - sku: "as"
-      description: ""
-    - sku: "vs"
-      description: ""
-    - sku: "ec"
-      description: ""
+    vsc: { sku: 'vsc', description: '' }
+    as:
+      {
+        sku: 'as',
+        description: 'Utilisé dans un environnement scolaire Android Studio reste mon IDE de choix pour la programmation mobile malgré son comportement quelquefois capricieux.',
+      }
+    vs: { sku: 'vs', description: '' }
+    ec: { sku: 'ec', description: '' }

@@ -1,3 +1,3 @@
-export default (data, common) => {
-  return Object.assign(data, common[data.sku]);
+export const construct = (item, datas) => {
+  return Object.assign(item, datas[ item.sku ])
 };

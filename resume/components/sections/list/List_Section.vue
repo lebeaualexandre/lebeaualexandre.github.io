@@ -28,6 +28,10 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  data() {
+    console.log({ i18n: this.$i18n.locale });
+    return {};
   }
 };
 </script>
@@ -35,5 +39,4 @@ export default {
 
 
 <style lang="sass">
-
 </style>

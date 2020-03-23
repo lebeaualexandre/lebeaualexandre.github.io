@@ -46,6 +46,7 @@ export default {
     "~/assets/css/reset.css",
     "~/assets/css/css_var/Colors.sass",
     "~/assets/css/font.sass",
+    "~/assets/css/components.sass",
     "~/assets/css/inputs.sass"
   ],
   modules: [ "@nuxtjs/style-resources" ],
@@ -83,7 +84,7 @@ export default {
             i18n: "@kazupon/vue-i18n-loader"
           }
         }
-      }
+      },
     ]
     // modules: ["@nuxtjs/style-resources"],
   },

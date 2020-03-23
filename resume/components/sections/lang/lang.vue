@@ -28,19 +28,18 @@ export default {
 <i18n src="~/assets/data/idioms/i18n.yml"></i18n>
 
 <style lang="sass" scoped>
-
-
 ul
   flex-direction: row
   justify-content: space-between
   flex-wrap: wrap
   padding: 0 1.5rem
+  margin-left: auto
   > li
     display: flex
     padding: 0 1rem
     min-width: 10rem
     list-style: none
-    justify-content: space-between;
+    justify-content: space-between
     > h4
       padding-right: 12px
 

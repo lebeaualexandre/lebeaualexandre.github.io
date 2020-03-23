@@ -1,11 +1,13 @@
 [
   {
-    "method": "tel:",
     "value": "+14388638454",
-    "icon": "phone"
+    "icon": "phone",
+    "actions": [
+      "tel",
+      "sms"
+    ]
   },
   {
-    "method": "tel:",
     "value": "+24383975373",
     "icon": "phone"
   }

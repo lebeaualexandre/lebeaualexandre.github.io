@@ -1,9 +1,9 @@
 /** https://codesandbox.io/s/github/nuxt/nuxt.js/tree/dev/examples/i18n?from-embed **/
 
 export const state = () => ({
-  locales: ["en", "fr"],
+  locales: [ "en", "fr" ],
   locale: "fr",
-  themes: ["light", "dark"],
+  themes: [ "light", "dark" ],
   theme: "light"
 });
 

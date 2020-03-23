@@ -1,22 +1,22 @@
 {
   "vsc": {
     "name": "Visual Studio Code",
-    "tags": ["home", "school", "work", "heart"],
-    "sub_list": ["C#", "Java", "Javascript", "HTML", "CSS", "JSON", "YAML"]
+    "sub_list": ["C#", "Java", "Javascript", "HTML", "CSS", "JSON", "YAML"],
+    "tags": ["home", "school", "work", "heart"]
   },
   "as": {
     "name": "Android Studio",
-    "tags": ["school"],
-    "sub_list": ["Java", "Kotlin"]
+    "sub_list": ["Java", "Kotlin"],
+    "tags": ["school"]
   },
   "vs": {
     "name": "Visual Studio",
-    "tags": ["school"],
-    "sub_list": ["C#", "XAML", ".net"]
+    "sub_list": ["C#", "XAML", ".net"],
+    "tags": ["school"]
   },
   "ec": {
     "name": "Eclipse",
-    "tags": ["school"],
-    "sub_list": ["Java"]
+    "sub_list": ["Java"],
+    "tags": ["school"]
   }
 }

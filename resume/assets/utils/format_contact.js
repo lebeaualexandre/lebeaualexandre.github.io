@@ -9,7 +9,7 @@ export const format_phone = phone => {
 export const phone_is_valid = _.memoize(phone => {
   if (!phone.match(valid_phone)) {
     console.error(
-      `${phone} isn't a valid phone number.\nOnly Canadian (+1) numbers are allowed with 10 following numbers.`
+      `${ phone } isn't a valid phone number.\nOnly Canadian (+1 with 10 following numbers) numbers are allowed.`
     );
     return false;
   }

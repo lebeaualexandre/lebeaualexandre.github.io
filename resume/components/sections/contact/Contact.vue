@@ -1,33 +1,34 @@
 <template>
   <address>
-    <a v-for="contact in email" :key="contact.value" :href="`mailto:${contact.value}`">
-      <i class="material-icons">{{ contact.icon }}</i>
+    <a
+      v-for="contact in email"
+      :key="contact.value"
+      :href="`mailto:${contact.value}`"
+      target="_blank"
+    >
+      <i class="material-icons isbefore">{{ contact.icon }}</i>
       {{ contact.value }}
     </a>
-    <a
+    <phone
       v-for="contact in phone"
       :key="contact.value"
-      :href="`tel:${contact.value}`"
-      :class="{'invalid' : !phone_is_valid(contact.value)}"
-    >
-      <i class="material-icons">{{ contact.icon }}</i>
-      {{ format_phone(contact.value)}}
-    </a>
+      :value="contact.value"
+      :actions="contact.actions"
+    />
   </address>
 </template>
 
 <script>
 import phone from "~/assets/data/contact/phone.json";
 import email from "~/assets/data/contact/email.json";
-import { format_phone, phone_is_valid } from "~/assets/utils/format_contact.js";
+import Phone from "./Phone";
 
 export default {
   data() {
     return { phone, email };
   },
-  methods: {
-    phone_is_valid: contact => phone_is_valid(contact),
-    format_phone: contact => format_phone(contact)
+  components: {
+    Phone
   }
 };
 </script>
@@ -39,7 +40,7 @@ address
   flex-wrap: wrap
 
 
-a
+a, span
   font-size: 1rem
   color: $tertiary
   display: flex
@@ -47,6 +48,7 @@ a
   align-items: center
   padding: 0.5rem 1rem
   transition: color 0.12s
+  line-height: 1.75rem
   &:visited
     color: $quaternary
   &:focus, &:hover
@@ -58,9 +60,4 @@ a
     display: none
 
 
-i
-  padding: 0
-  padding-right: 0.5rem
-  line-height: inherit !important
-  user-select: none
 </style>

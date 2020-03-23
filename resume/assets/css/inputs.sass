@@ -12,16 +12,16 @@ button
   flex-direction: column
   align-items: center
   color: $primary
-  &::after
-    content: ''
-    transition: width 0.2s ease-out
-    width: 100%
-    height: 1px
-    background-color: $secondary
-    margin-top: 0.5rem
   &:focus
     outline: none
-  &:hover
+  &.underlined
     &::after
-      width: 50%
-
+      content: ''
+      transition: width 0.24s ease-in-out
+      width: 100%
+      height: 1px
+      background-color: $secondary
+      margin-top: 0.5rem
+    &:hover
+      &::after
+        width: 50%

@@ -7,7 +7,7 @@
       exact
       :title="languages.en.name"
     >
-      <i class="material-icons">language</i>
+      <i class="material-icons isbefore">language</i>
       <div>{{ languages.en.code }}</div>
     </NuxtLink>
     <NuxtLink
@@ -17,7 +17,7 @@
       exact
       :title="languages.fr.name"
     >
-      <i class="material-icons">language</i>
+      <i class="material-icons isbefore">language</i>
       <div>{{ languages.fr.code }}</div>
     </NuxtLink>
   </nav>

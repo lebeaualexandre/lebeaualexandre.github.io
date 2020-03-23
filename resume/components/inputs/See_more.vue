@@ -1,6 +1,6 @@
 <template>
   <div id="btn-container">
-    <button @click="moreLess">{{ $t(`${seeMore ? "less" : "more"}`) }}</button>
+    <button class="underlined" @click="moreLess">{{ $t(`${seeMore ? "less" : "more"}`) }}</button>
   </div>
 </template>
 
@@ -22,9 +22,10 @@ export default {
 div#btn-container
   padding: 12px
   position: sticky
-  bottom: -1px
+  bottom: -1rem
   background-color: $bg
   color: $primary
   box-shadow: 0px -6px 12px 4px $bg
   margin-top: 12px
+  width: 100%
 </style>
