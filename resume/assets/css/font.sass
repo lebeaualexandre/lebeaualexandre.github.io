@@ -12,11 +12,13 @@
 
 
 html
-  font-size: 12px
   font-family: 'Nunito', sans-serif
   color: $primary
   ::selection
     background: $tertiary
+  font-size: 12px
+  @media(min-width: $tablet)
+    font-size: 16px
 
 
 
@@ -40,13 +42,18 @@ h1
 p, a, i,
   font-family: "Nunito"
   padding: 12px 0
-  text-align: justify
   font-size: 1.5rem
   line-height: 1.75rem
   text-decoration: none
   letter-spacing: 0.1rem
+  text-align: center
+  @media(min-width: $tablet)
+    text-align: justify
   &.isbefore
     padding-right: 0.5rem
+
+dd > p
+  text-align: left
 
 h2
   font-weight: 200

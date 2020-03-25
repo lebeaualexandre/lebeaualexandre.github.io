@@ -14,15 +14,12 @@ export default {
 </script>
 
 <style lang="sass">
-
-
-
 body
   min-height: 100vh
   background-color: $bg
 html
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",    Roboto, "Helvetica Neue", Arial, sans-serif
-  font-size: 16px
+  // font-size: 16px
   word-spacing: 1px
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
@@ -35,5 +32,4 @@ html
 *:after
   box-sizing: border-box
   margin: 0
-
 </style>

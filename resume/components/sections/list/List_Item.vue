@@ -41,6 +41,30 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+article
+  display: flex
+  flex: 1 1 100%
+  width: 100%
+  // &:not(:first-child)
+  //   border-top: solid 2px $secondary
+  &.half-mobile
+    @media(min-width: $mobile)
+      display: flex
+      flex: 1 1 50%
+      width: 50%
+
+  &.half-tablet
+    @media(min-width: $tablet)
+      display: flex
+      flex: 1 1 50%
+      width: 50%
+
+  &.half-desktop
+    @media(min-width: $desktop)
+      display: flex
+      flex: 1 1 50%
+      width: 50%
+
 dl
   display: flex
   justify-content: space-between

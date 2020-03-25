@@ -1,11 +1,13 @@
 <template>
   <section-component :header="$t('header')">
-    <list-item
-      v-for="item in $t('list')"
-      :key="item.sku"
-      :item="construct(item)"
-      :class="`pastille ${item.description.length < 150 &&'half-tablet'}`"
-    ></list-item>
+    <article>
+      <list-item
+        v-for="item in $t('list')"
+        :key="item.sku"
+        :item="construct(item)"
+        :class="`pastille ${item.description.length < 150 &&'half-tablet'}`"
+      ></list-item>
+    </article>
   </section-component>
 </template>
 
@@ -36,23 +38,5 @@ export default {
 <style lang="sass" scoped>
 article
   display: flex
-  flex: 1 1 100%
-  width: 100%
-  &.half-mobile
-    @media(min-width: $mobile)
-      display: flex
-      flex: 1 1 50%
-      width: 50%
-
-  &.half-tablet
-    @media(min-width: $tablet)
-      display: flex
-      flex: 1 1 50%
-      width: 50%
-
-  &.half-desktop
-    @media(min-width: $desktop)
-      display: flex
-      flex: 1 1 50%
-      width: 50%
+  flex-wrap: wrap
 </style>

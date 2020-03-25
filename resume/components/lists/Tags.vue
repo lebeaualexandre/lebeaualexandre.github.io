@@ -1,10 +1,12 @@
 <template>
-  <ol>
-    <li v-for="tag in tags" :key="tag">
-      <i class="material-icons" :label="$t(tag)">{{icons[tag]}}</i>
-      <span>{{$t(tag)}}</span>
-    </li>
-  </ol>
+  <div>
+    <ol>
+      <li v-for="tag in tags" :key="tag" @mouseover="hovered = tag" @mouseleave="hovered = ''">
+        <i class="material-icons" :label="$t(tag)">{{icons[tag]}}</i>
+      </li>
+    </ol>
+    <span>{{$t(hovered)}}</span>
+  </div>
 </template>
 
 <script>
@@ -12,7 +14,7 @@ import icons from "~/assets/data/tags/material_icon";
 
 export default {
   data() {
-    return { icons };
+    return { icons, hovered: "" };
   },
   props: {
     tags: {
@@ -26,9 +28,13 @@ export default {
 <i18n src="~/assets/data/tags/i18n.yml"></i18n>
 
 <style lang="sass" scoped>
+div
+  display: flex
+  align-items: center
+  padding: 1rem 0 0 0
+
 ol
   display: flex
-  padding: 1rem 0 0 0
 
 li
   position: relative
@@ -36,24 +42,13 @@ li
 
 i
   padding: 0 1rem
-  cursor: default
   &:first-child
     padding-left: 0.5rem
 
-span
-  opacity: 0
-  position: absolute
-  top: -1.75rem
-  left: 50%
-  transform: translateX(-50%)
+span, i
+  cursor: default
   padding: 0 1rem
-  width: max-content
-
-li:first-child > span
-  left: -0.5rem
-  transform: translateX(0)
-
-i:hover + span
-  opacity: 1
-  transition: opacity 0.24s ease-in-out
+  line-height: 2rem
+  min-height: 2rem
+  text-align: center
 </style>
