@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style lang="sass">
+h2
+  padding-left: 2rem
+
 .container
   margin: 0 auto
   min-height: 100vh
@@ -43,4 +46,29 @@ export default {
 .links
   padding-top: 15px
 
+p
+  line-height: 2.4rem
+  font-size: 1.4rem
+
+em
+  position: relative
+  font-weight: 800
+
+a, span
+  font-size: 1rem
+  color: $tertiary
+  display: flex
+  transition: color 0.12s
+  justify-content: center
+  position: relative
+  align-items: center
+  &:visited
+    color: $quaternary
+  &:focus, &:hover
+    color: $primary
+    outline: none
+  &::active
+    font-weight: 800
+  &.invalid
+    display: none
 </style>

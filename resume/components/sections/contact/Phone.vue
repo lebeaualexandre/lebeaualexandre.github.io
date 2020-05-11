@@ -1,8 +1,8 @@
 <template>
   <article :class="{'invalid': !phone_is_valid(value)}">
     <span :class="{'hidden': opened, }" v-on:click="openClose()">
-      <i class="material-icons isbefore">phone_android</i>
-      {{ number }}
+      <i class="material-icons">phone_android</i>
+      <!-- {{ number }} -->
     </span>
     <article id="options" :class="{'hidden': !opened}">
       <a :href="`${action}:${value}`" v-for="action in actions" :key="action + number">
@@ -68,48 +68,37 @@ span
 
 #options,
   position: absolute
+  right: 0%
 
 #options,
 span
   overflow: hidden
-  transition: transform 5.24s ease-in-out
-  transform: scaleX(1)
+  transition: transform 0.12s ease-in-out
+  transform: scaleY(1)
   &.hidden
-    transform: scaleX(0)
+    transform: scaleY(0)
 
 a, button
-  padding: 0.75rem 1rem
-  background-color: $senary
+  padding: 0rem 1rem
+  background-color: $bg
   transition: filter 0.12s ease-in-out
   line-height: 1rem
-  &::after
-    content: ""
-    position: absolute
-    left: 0
-    bottom: 20%
-    width: 100%
-    height: 30%
-    background-color: $primary
-    opacity: 50%
-    border-radius: 0.25rem
-    z-index: -1
-    transition: height 0.24s
   &:first-child
     border-top-left-radius: 1rem
     border-bottom-left-radius: 1rem
   &:last-child
     border-top-right-radius: 1rem
     border-bottom-right-radius: 1rem
-  &:hover
-    filter: brightness(1.1)
-    &::after
-      height: 60%
+  // &:hover
+  //   filter: brightness(1.1)
+  //   &::after
+  //     height: 60%
 
 button
-  background: $septenary
+  background: $bg
 
-i:not(.isbefore)
-  padding: 0
+i
+  padding: 0.5rem
   line-height: inherit !important
   user-select: none
 </style>

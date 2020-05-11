@@ -33,7 +33,7 @@ ul
   justify-content: space-between
   flex-wrap: wrap
   padding: 0 1.5rem
-  margin-left: auto
+  // margin-left: auto
   > li
     display: flex
     padding: 0 1rem

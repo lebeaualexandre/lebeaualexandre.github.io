@@ -30,7 +30,6 @@ export default {
     }
   },
   data() {
-    console.log({ i18n: this.$i18n.locale });
     return {};
   }
 };

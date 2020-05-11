@@ -45,6 +45,7 @@ export default {
   css: [
     "~/assets/css/reset.css",
     "~/assets/css/css_var/Colors.sass",
+    "~/assets/css/css_var/animations.sass",
     "~/assets/css/font.sass",
     "~/assets/css/components.sass",
     "~/assets/css/inputs.sass"

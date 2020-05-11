@@ -5,9 +5,11 @@
       :key="contact.value"
       :href="`mailto:${contact.value}`"
       target="_blank"
+      :name="contact.value"
     >
-      <i class="material-icons isbefore">{{ contact.icon }}</i>
-      {{ contact.value }}
+      <i class="material-icons">{{ contact.icon }}</i>
+      <!-- {{ contact.value }} -->
+      <!-- <help :content="contact.value" :icon="contact.icon" position="left" /> -->
     </a>
     <phone
       v-for="contact in phone"
@@ -22,13 +24,15 @@
 import phone from "~/assets/data/contact/phone.json";
 import email from "~/assets/data/contact/email.json";
 import Phone from "./Phone";
+import Help from "~/components/inputs/help.vue";
 
 export default {
   data() {
     return { phone, email };
   },
   components: {
-    Phone
+    Phone,
+    Help
   }
 };
 </script>
@@ -38,26 +42,11 @@ address
   display: flex
   justify-content: space-evenly
   flex-wrap: wrap
-
+  position: relative
 
 a, span
-  font-size: 1rem
-  color: $tertiary
-  display: flex
-  justify-content: center
-  align-items: center
-  padding: 0.5rem 1rem
-  transition: color 0.12s
-  line-height: 1.75rem
-  &:visited
-    color: $quaternary
-  &:focus, &:hover
-    color: $primary
-    outline: none
-  &::active
-    font-weight: 800
-  &.invalid
-    display: none
-
-
+  padding: 0rem 1rem
+  flex-direction: row
+  user-select: none
+  width: 4.5rem
 </style>

@@ -11,7 +11,11 @@ fr:
   header: 'IDE/éditeur de choix'
   description: ' '
   list:
-    vsc: { sku: 'vsc', description: '' }
+    vsc:
+      {
+        sku: 'vsc',
+        description: 'Visual Studio code est mon environnement de travail de choix depuis que jen ai fait la découverte.',
+      }
     as:
       {
         sku: 'as',

@@ -30,18 +30,30 @@ export default {
 <style lang="sass" scoped>
 div
   display: flex
-  align-items: center
-  padding: 1rem 0 0 0
+  flex-direction: column
+  flex: 1 1 50%
+  @media(min-width: $tablet)
+    padding: 0.75rem 0 0 0
+    max-width: 50%
+    align-items: flex-end
 
 ol
   display: flex
+  flex-wrap: wrap
+  max-width: 100%
+  @media(min-width: $tablet)
+    align-items: flex-end
+    justify-content: flex-end
 
 li
   position: relative
   height: max-content
+  flex: 1 1 25%
+  max-width: fit-content
 
 i
   padding: 0 1rem
+  font-size: 1.5rem
   &:first-child
     padding-left: 0.5rem
 
@@ -50,5 +62,9 @@ span, i
   padding: 0 1rem
   line-height: 2rem
   min-height: 2rem
-  text-align: center
+  white-space: nowrap
+  text-align: right
+  justify-content: flex-start
+  @media(min-width: $tablet)
+    justify-content: flex-end
 </style>

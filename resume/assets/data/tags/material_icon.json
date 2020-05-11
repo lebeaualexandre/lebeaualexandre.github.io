@@ -1,6 +1,6 @@
 {
   "school": "school",
-  "home": "home",
-  "work": "work_outline",
-  "heart": "favorite_border"
+  "home": "house",
+  "work": "work",
+  "heart": "favorite"
 }

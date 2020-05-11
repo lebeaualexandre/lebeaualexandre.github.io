@@ -42,4 +42,5 @@ ul
 
   a
     padding: 0 1rem
+    width: auto
 </style>

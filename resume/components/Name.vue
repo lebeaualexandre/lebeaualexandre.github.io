@@ -1,5 +1,8 @@
 <template>
-  <h1>Lebeau</h1>
+  <article>
+    <h1>Alexandre Lebeau</h1>
+    <h2>Programmeur Logiciel</h2>
+  </article>
 </template>
 
 <script>
@@ -10,36 +13,19 @@ export default {
 };
 </script>
 
-<style lang="sass">
-h1
+<style lang="sass" scoped>
+$size: 3rem
+
+h1, h2
   color: $primary
   position: relative
-  top: 0
-  text-align: center
-  padding: 2rem 0
-  letter-spacing: 5px
+  font-size: $size
   cursor: default
+  text-align: right
+  white-space: nowrap
   user-select: none
-  transition: font-size 0.24s ease-in-out
-  &::after
-    content: ''
-    transition: height 0.24s ease-in-out
-    height: 1.8rem
-    position: absolute
-    width: 100%
-    left: 0
-    bottom: 2.8rem
-    background-color: $bg
-  &:hover
-    &::after
-      height: 0.95rem
+  padding: 0.5rem
 
-  &.small
-    font-size: 4em
-    &::after
-      height: 1.1rem
-      bottom: 2.6rem
-    &:hover
-      &::after
-        height: 0.5rem
+h1
+  letter-spacing: 6px
 </style>
